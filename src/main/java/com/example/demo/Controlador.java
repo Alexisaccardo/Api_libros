@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 public class Controlador {
     @PostMapping("/registrar-libro")
-    public String createuser(@RequestBody Libros libros) throws SQLException, ClassNotFoundException {
+    public String registerbook(@RequestBody Libros libros) throws SQLException, ClassNotFoundException {
         String answer = "";
 
         String code = libros.getCode();
