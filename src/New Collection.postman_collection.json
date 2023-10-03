@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "10705c51-8d5d-412e-bfed-4e67e359096f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Editar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"code\":\"1006589\",\r\n    \"authorname\": \"Gabriel Garcia\",\r\n    \"namebook\": \"cien años de soledad\",\r\n    \"date\": \"1967-08-12\",\r\n    \"bussines\": \"\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/editar-libro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"editar-libro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"code\":\"1006589\",\r\n    \"authorname\": \"Michael\",\r\n    \"namebook\": \"trujillo\",\r\n    \"date\": \"2010-10-01\",\r\n    \"bussines\": \"Meli\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/registrar-libro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registrar-libro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar-libros",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/buscar-libros",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"buscar-libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar_libro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/buscar-libro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"buscar-libro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar-libro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"100658\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/eliminar-libro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eliminar-libro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
